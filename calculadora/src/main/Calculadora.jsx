@@ -3,6 +3,7 @@ import './Calculadora.css';
 import Button from "../componentes/Button";
 import Display from "../componentes/Display";
 
+
 const initialState = {
     displayValue: '0',
     clearDisplay: false,
@@ -75,6 +76,7 @@ export default class Calculadora extends Component {
     render() {
         return (
             <div className="calculadora">
+                
                 <Display value={this.state.displayValue} />
                 <Button label="AC" click={this.clearMemory} triple />
                 <Button label="/" click={this.setOperation} operation />
